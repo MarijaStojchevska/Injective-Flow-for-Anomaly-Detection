@@ -39,7 +39,7 @@ which we decide if the new image is a part of the generated distribution (non-de
 if it is an outlier (defective).
 </div>
 
-<p><div align="center"><img width="567" src="https://user-images.githubusercontent.com/18449614/173446053-a69490f8-ecce-4f7f-99d0-55218c3bd9d9.png"> </div><div align="center"><i>MVTec dataset - Paul Bergmann, Kilian Batzner, Michael Fauser, David Sattlegger, and Carsten Steger.
+<p><div align="center"><img width="567" src="https://user-images.githubusercontent.com/18449614/173446053-a69490f8-ecce-4f7f-99d0-55218c3bd9d9.png"> </div><div align="center"><i>Figure 1: MVTec dataset - Paul Bergmann, Kilian Batzner, Michael Fauser, David Sattlegger, and Carsten Steger.
 The mvtec anomaly detection dataset: a comprehensive real-world dataset for unsupervised
 anomaly detection. International Journal of Computer Vision, 129(4):1038–1059,
 2021.</i></div></p>
@@ -58,7 +58,7 @@ above each column. The first row shows the reconstructions of the whole injectiv
 transformation, while the second row shows their corresponding reconstructions obtained
 by applying only the inverse bijective transformation.</i></div></p>
 
-<p><div align="center"><img width="500" src="https://user-images.githubusercontent.com/18449614/173459774-567f1050-0977-452d-92ee-28b2e1af9f12.png"> </div><div align="center"><i>Example of newly generated digits using an injective model trained on 30,000
+<p><div align="center"><img width="500" src="https://user-images.githubusercontent.com/18449614/173459774-567f1050-0977-452d-92ee-28b2e1af9f12.png"> </div><div align="center"><i>Figure 2: Example of newly generated digits using an injective model trained on 30,000
 MNIST training images. Above each image we show the depth of the injective map of the
 model that generates the displayed digits.</i></div></p>
   
@@ -70,7 +70,7 @@ using seven different test sets, of which six were artificially created. Having 
 the model has a remarkable ability to detect anomalies for handwritten digits, we proceeded
 to work on the same problem for the MVTec dataset. </div>
 
-<p><div align="center"><img width="567" src="https://user-images.githubusercontent.com/18449614/173460172-20a1cf45-ed1d-4e42-bbfe-9934354ceec1.png"> </div><div align="center"><i>Example of out-of-distribution data reconstruction using an injective model
+<p><div align="center"><img width="567" src="https://user-images.githubusercontent.com/18449614/173460172-20a1cf45-ed1d-4e42-bbfe-9934354ceec1.png"> </div><div align="center"><i>Figure 3: Example of out-of-distribution data reconstruction using an injective model
 trained on the MNIST dataset.</i></div></p>
 
 <p><div align="justify">
