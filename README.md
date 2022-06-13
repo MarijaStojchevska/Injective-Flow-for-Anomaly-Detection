@@ -26,7 +26,7 @@ Instructions for accessing the datasets:
 ```
 
 # Detection of Anomalous Images using Injective Flows
-<div align="center">
+<div align="justify">
 Traditional normalizing flows require large computational costs to learn transformations of
 an input distribution, mainly because they operate at exactly the same dimension as the
 input which is usually high dimensional. We utilized the Trumpet model idea (https://github.com/swing-research/trumpets.git) to implement
