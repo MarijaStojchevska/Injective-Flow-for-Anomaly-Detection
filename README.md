@@ -51,14 +51,14 @@ suitable for deep learning. By experimenting on the MNIST dataset, we concluded 
 model is capable of reconstructing high-quality images and generating new images from the
 learned distribution. 
 
-<p><div align="center"><img width="767" src="https://user-images.githubusercontent.com/18449614/173459470-8aee42ef-0d01-474d-ba2a-f573ffef3900.png"> </div><div align="center"><i>Example of the reconstruction of 36 input MNIST images using injective models
+<p><div align="center"><img width="767" src="https://user-images.githubusercontent.com/18449614/173459470-8aee42ef-0d01-474d-ba2a-f573ffef3900.png"> </div><div align="center"><i>Figure 2: Example of the reconstruction of 36 input MNIST images using injective models
 trained on 30,000 MNIST training examples. For each model, the different depth of the
 injective map, i.e. the number of squeeze-bijective revnet-injective revnet blocks, is written
 above each column. The first row shows the reconstructions of the whole injective-bijective
 transformation, while the second row shows their corresponding reconstructions obtained
 by applying only the inverse bijective transformation.</i></div></p>
 
-<p><div align="center"><img width="500" src="https://user-images.githubusercontent.com/18449614/173459774-567f1050-0977-452d-92ee-28b2e1af9f12.png"> </div><div align="center"><i>Figure 2: Example of newly generated digits using an injective model trained on 30,000
+<p><div align="center"><img width="500" src="https://user-images.githubusercontent.com/18449614/173459774-567f1050-0977-452d-92ee-28b2e1af9f12.png"> </div><div align="center"><i>Figure 3: Example of newly generated digits using an injective model trained on 30,000
 MNIST training images. Above each image we show the depth of the injective map of the
 model that generates the displayed digits.</i></div></p>
   
@@ -70,7 +70,7 @@ using seven different test sets, of which six were artificially created. Having 
 the model has a remarkable ability to detect anomalies for handwritten digits, we proceeded
 to work on the same problem for the MVTec dataset. </div>
 
-<p><div align="center"><img width="567" src="https://user-images.githubusercontent.com/18449614/173460172-20a1cf45-ed1d-4e42-bbfe-9934354ceec1.png"> </div><div align="center"><i>Figure 3: Example of out-of-distribution data reconstruction using an injective model
+<p><div align="center"><img width="567" src="https://user-images.githubusercontent.com/18449614/173460172-20a1cf45-ed1d-4e42-bbfe-9934354ceec1.png"> </div><div align="center"><i>Figure 4: Example of out-of-distribution data reconstruction using an injective model
 trained on the MNIST dataset.</i></div></p>
 
 <p><div align="justify">
