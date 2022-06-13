@@ -36,7 +36,7 @@ defects in the manufacturing industry by working with images of various objects 
 from the MVTec dataset.
 </div>
 
-<p><div align="center"><img width="567" src="https://user-images.githubusercontent.com/18449614/173446053-a69490f8-ecce-4f7f-99d0-55218c3bd9d9.png"> <i>MVTec dataset - Paul Bergmann, Kilian Batzner, Michael Fauser, David Sattlegger, and Carsten Steger.
+<p><div align="center"><img width="567" src="https://user-images.githubusercontent.com/18449614/173446053-a69490f8-ecce-4f7f-99d0-55218c3bd9d9.png"> </div><div align="center"><i>MVTec dataset - Paul Bergmann, Kilian Batzner, Michael Fauser, David Sattlegger, and Carsten Steger.
 The mvtec anomaly detection dataset: a comprehensive real-world dataset for unsupervised
 anomaly detection. International Journal of Computer Vision, 129(4):1038–1059,
 2021.</i></div></p>
