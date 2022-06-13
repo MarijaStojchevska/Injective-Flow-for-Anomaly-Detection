@@ -53,7 +53,7 @@ suitable for deep learning. By experimenting on the MNIST dataset, we concluded 
 model is capable of reconstructing high-quality images and generating new images from the
 learned distribution. 
 
-<p><div align="center"><img width="567" src="https://user-images.githubusercontent.com/18449614/173459470-8aee42ef-0d01-474d-ba2a-f573ffef3900.png"> </div><div align="center"><i>Example of the reconstruction of 36 input MNIST images using injective models
+<p><div align="center"><img width="767" src="https://user-images.githubusercontent.com/18449614/173459470-8aee42ef-0d01-474d-ba2a-f573ffef3900.png"> </div><div align="center"><i>Example of the reconstruction of 36 input MNIST images using injective models
 trained on 30,000 MNIST training examples. For each model, the different depth of the
 injective map, i.e. the number of squeeze-bijective revnet-injective revnet blocks, is written
 above each column. The first row shows the reconstructions of the whole injective-bijective
