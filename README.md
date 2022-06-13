@@ -42,7 +42,17 @@ In other words, we used the injective flow to create a distribution
 of healthy, non-defective images and estimate the exact likelihood of new images based on
 which we decide if the new image is a part of the generated distribution (non-defective) or
 if it is an outlier (defective).
-  
-  
-  
+
+<div align="justify">
+Given the complexity of our work, at the very beginning, we facilitated a thorough evaluation
+of the generative and discriminatory power of the model by using the MNIST dataset that is
+suitable for deep learning. By experimenting on the MNIST dataset, we concluded that the
+model is capable of reconstructing high-quality images and generating new images from the
+learned distribution. In contrast, we also noticed that the injective flow with deeper injective
+mappings becomes quite unstable in reconstructing outliers. Furthermore, we tested the
+discriminatory performance in anomaly detection of the model based on the MNIST dataset
+using seven different test sets, of which six were artificially created. Having concluded that
+the model has a remarkable ability to detect anomalies for handwritten digits, we proceeded
+to work on the same problem for the MVTec dataset.
+</div>
 
