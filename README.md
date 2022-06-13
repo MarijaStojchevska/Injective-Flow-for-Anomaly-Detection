@@ -51,7 +51,17 @@ Given the complexity of our work, at the very beginning, we facilitated a thorou
 of the generative and discriminatory power of the model by using the MNIST dataset that is
 suitable for deep learning. By experimenting on the MNIST dataset, we concluded that the
 model is capable of reconstructing high-quality images and generating new images from the
-learned distribution. In contrast, we also noticed that the injective flow with deeper injective
+learned distribution. 
+
+<p><div align="center"><img width="567" src="https://user-images.githubusercontent.com/18449614/173459470-8aee42ef-0d01-474d-ba2a-f573ffef3900.png"> </div><div align="center"><i>Example of the reconstruction of 36 input MNIST images using injective models
+trained on 30,000 MNIST training examples. For each model, the different depth of the
+injective map, i.e. the number of squeeze-bijective revnet-injective revnet blocks, is written
+above each column. The first row shows the reconstructions of the whole injective-bijective
+transformation, while the second row shows their corresponding reconstructions obtained
+by applying only the inverse bijective transformation.</i></div></p>
+  
+  
+In contrast, we also noticed that the injective flow with deeper injective
 mappings becomes quite unstable in reconstructing outliers. Furthermore, we tested the
 discriminatory performance in anomaly detection of the model based on the MNIST dataset
 using seven different test sets, of which six were artificially created. Having concluded that
