@@ -36,7 +36,7 @@ defects in the manufacturing industry by working with images of various objects 
 from the MVTec dataset:
 </div>
 
-<p align="center"><img width="567" alt="Screenshot 2022-06-13 at 23 10 22" src="https://user-images.githubusercontent.com/18449614/173446053-a69490f8-ecce-4f7f-99d0-55218c3bd9d9.png"> </p>
+<p><div align="center"><img width="567" alt="Screenshot 2022-06-13 at 23 10 22" src="https://user-images.githubusercontent.com/18449614/173446053-a69490f8-ecce-4f7f-99d0-55218c3bd9d9.png"> </div></p>
 
 In other words, we used the injective flow to create a distribution
 of healthy, non-defective images and estimate the exact likelihood of new images based on
