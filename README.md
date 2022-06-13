@@ -56,3 +56,14 @@ the model has a remarkable ability to detect anomalies for handwritten digits, w
 to work on the same problem for the MVTec dataset.
 </div>
 
+<div align="justify">
+Given the dimensionality of the MVTec images, we used transfer learning to extract their
+features and thus reduce their dimension, while still preserving important image information.
+The extracted features were then averaged across the channel dimension. Apart from
+the injective mapping, in this way we further reduced the computational complexity of the
+model. In addition to feature extraction, we applied background extraction, data augmentation, 
+and data standardization to the MVTec training and test examples. With each of
+these preprocessing steps, we contributed in a different way to improving the model’s performance.
+In the rest of the work, we covered the training and evaluation of the model on
+such preprocessed images.
+</div>
