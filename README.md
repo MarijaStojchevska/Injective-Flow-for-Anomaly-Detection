@@ -98,6 +98,16 @@ purpose of outlier detection, the difference in densities in both spaces is not 
 neglected. This indicates that, as we intuitively expected, the injective mapping contributes
 to a faster but not a better model evaluation. Hence, for problems involving the use of these
 models in learning low-dimensional data distribution, we can neglect injective mapping and
-rely solely on traditional normalizing flows. As a final thought, we can point out that our
+rely solely on traditional normalizing flows. </div>
+
+<p><div align="center"><img width="567" src="https://user-images.githubusercontent.com/18449614/173462339-06aee483-12a3-4e18-8c23-753e71b08b9d.png"> </div><div align="center"><i>Table 1: Evaluation results of the injective model when trained and tested on the VGG16
+extracted features per category. The results are shown with respect to the original, standardized,
+and augmented input images. The upper values in each row represent the AUC
+of the performance of the injective flow, while the lower values represent the AUC of the
+performance of the bijective flow. The best value for each category is shown in bold.</i></div></p>
+
+<p><div align="center"><img width="567" src="https://user-images.githubusercontent.com/18449614/173462473-b921ec77-be0b-46c0-9b4a-79c63e4b285b.png"> </div><div align="center"><i>Table 2: </i></div></p>
+  
+As a final thought, we can point out that our
 injective model outperforms the established baselines in detecting MVTec defective objects
-and textures for most of the categories.</div>
+and textures for most of the categories.
