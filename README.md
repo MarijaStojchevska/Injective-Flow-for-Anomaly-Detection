@@ -58,7 +58,7 @@ above each column. The first row shows the reconstructions of the whole injectiv
 transformation, while the second row shows their corresponding reconstructions obtained
 by applying only the inverse bijective transformation.</i></div></p>
 
-<p><div align="center"><img width="367" src="https://user-images.githubusercontent.com/18449614/173459774-567f1050-0977-452d-92ee-28b2e1af9f12.png"> </div><div align="center"><i>Example of newly generated digits using an injective model trained on 30,000
+<p><div align="center"><img width="567" src="https://user-images.githubusercontent.com/18449614/173459774-567f1050-0977-452d-92ee-28b2e1af9f12.png"> </div><div align="center"><i>Example of newly generated digits using an injective model trained on 30,000
 MNIST training images. Above each image we show the depth of the injective map of the
 model that generates the displayed digits.</i></div></p>
   
