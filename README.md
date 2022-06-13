@@ -19,7 +19,7 @@ Arguments:
 
 
 Instructions for accessing the datasets:
-The whole MVTec AD dataset can be downloaded from the official MVTec website: https://www.mvtec.com/company/research/datasets/mvtec-ad
-The official link for downloading the MNIST dataset: http://yann.lecun.com/exdb/mnist/
-The Fashion MNIST dataset can be downloaded from the zalandoresearch/fashion-mnist GitHub repository: https://github.com/zalandoresearch/fashion-mnist/tree/master/data/fashion
+- The whole MVTec AD dataset can be downloaded from the official MVTec website: https://www.mvtec.com/company/research/datasets/mvtec-ad
+- The official link for downloading the MNIST dataset: http://yann.lecun.com/exdb/mnist/
+- The Fashion MNIST dataset can be downloaded from the zalandoresearch/fashion-mnist GitHub repository: https://github.com/zalandoresearch/fashion-mnist/tree/master/data/fashion
 
