@@ -37,14 +37,12 @@ from the MVTec dataset. In other words, we used the injective flow to create a d
 of healthy, non-defective images and estimate the exact likelihood of new images based on
 which we decide if the new image is a part of the generated distribution (non-defective) or
 if it is an outlier (defective).
-
 </div>
 
 <p><div align="center"><img width="567" src="https://user-images.githubusercontent.com/18449614/173446053-a69490f8-ecce-4f7f-99d0-55218c3bd9d9.png"> </div><div align="center"><i>MVTec dataset - Paul Bergmann, Kilian Batzner, Michael Fauser, David Sattlegger, and Carsten Steger.
 The mvtec anomaly detection dataset: a comprehensive real-world dataset for unsupervised
 anomaly detection. International Journal of Computer Vision, 129(4):1038–1059,
 2021.</i></div></p>
-
 
 <div align="justify">
 Given the complexity of our work, at the very beginning, we facilitated a thorough evaluation
@@ -59,6 +57,10 @@ injective map, i.e. the number of squeeze-bijective revnet-injective revnet bloc
 above each column. The first row shows the reconstructions of the whole injective-bijective
 transformation, while the second row shows their corresponding reconstructions obtained
 by applying only the inverse bijective transformation.</i></div></p>
+
+<p><div align="center"><img width="767" src="https://user-images.githubusercontent.com/18449614/173459774-567f1050-0977-452d-92ee-28b2e1af9f12.png"> </div><div align="center"><i>Example of newly generated digits using an injective model trained on 30,000
+MNIST training images. Above each image we show the depth of the injective map of the
+model that generates the displayed digits.</i></div></p>
   
   
 In contrast, we also noticed that the injective flow with deeper injective
