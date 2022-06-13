@@ -66,3 +66,21 @@ and data standardization to the MVTec training and test examples. With each of
 these preprocessing steps, we contributed in a different way to improving the model’s performance.
 In the rest of the work, we covered the training and evaluation of the model on
 such preprocessed images. </div></p>
+
+
+<div align="justify">
+The architecture of the injective flows allows for efficient likelihood computation of a new
+sample with respect to two different densities learned in the two different output spaces of
+the model. Therefore, after training the model on nonanomalous examples, we evaluated
+the likelihoods—the probability that the instance is part of the learned distribution—for
+each test instance relative to the two learned densities. Our goal was to check if these two
+likelihoods are drastically different. Intuitively speaking, we were checking if something that
+looks like an anomaly in one space looks nonanomalous in the other space, and vice versa.
+From the evaluation results summarized in an AUC-ROC curve, we observed that, for the
+purpose of outlier detection, the difference in densities in both spaces is not large and can be
+neglected. This indicates that, as we intuitively expected, the injective mapping contributes
+to a faster but not a better model evaluation. Hence, for problems involving the use of these
+models in learning low-dimensional data distribution, we can neglect injective mapping and
+rely solely on traditional normalizing flows. As a final thought, we can point out that our
+injective model outperforms the established baselines in detecting MVTec defective objects
+and textures for most of the categories.</div>
