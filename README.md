@@ -100,7 +100,7 @@ to a faster but not a better model evaluation. Hence, for problems involving the
 models in learning low-dimensional data distribution, we can neglect injective mapping and
 rely solely on traditional normalizing flows. </div>
 
-<p><div align="center"><img width="567" src="https://user-images.githubusercontent.com/18449614/173462339-06aee483-12a3-4e18-8c23-753e71b08b9d.png"> </div><div align="center"><i>Table 1: Evaluation results of the injective model when trained and tested on the VGG16
+<p><div align="center"><img width="500" src="https://user-images.githubusercontent.com/18449614/173462339-06aee483-12a3-4e18-8c23-753e71b08b9d.png"> </div><div align="center"><i>Table 1: Evaluation results of the injective model when trained and tested on the VGG16
 extracted features per category. The results are shown with respect to the original, standardized,
 and augmented input images. The upper values in each row represent the AUC
 of the performance of the injective flow, while the lower values represent the AUC of the
@@ -116,6 +116,6 @@ As a final thought, we can point out that our
 injective model outperforms the established baselines in detecting MVTec defective objects
 and textures for most of the categories.
 
-<p><div align="center"><img width="667" src="https://user-images.githubusercontent.com/18449614/173462633-77e934d4-d627-4f7d-bc78-611783179232.png" > </div><div align="center"><i>Table 3: Comparison of the best AUC values obtained for the injective model relative to
+<p><div align="center"><img width="667" src="https://user-images.githubusercontent.com/18449614/173462817-fd9dbf24-977d-461b-94de-cb8a4f0c351a.png" > </div><div align="center"><i>Table 3: Comparison of the best AUC values obtained for the injective model relative to
 those corresponding to the baseline models. The best results for each MVTec category
 are shown in bold. </i></div></p>
