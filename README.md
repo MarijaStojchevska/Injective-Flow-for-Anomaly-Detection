@@ -35,9 +35,9 @@ via an injective mapping. The main task to which we adapted this model is the de
 defects in the manufacturing industry by working with images of various objects and textures
 from the MVTec dataset:
 </div>
-
-<div align="center"><img width="567" padding-top=50px alt="Screenshot 2022-06-13 at 23 10 22" src="https://user-images.githubusercontent.com/18449614/173446053-a69490f8-ecce-4f7f-99d0-55218c3bd9d9.png"> </div>
-
+<p> 
+<div align="center"><img width="567" alt="Screenshot 2022-06-13 at 23 10 22" src="https://user-images.githubusercontent.com/18449614/173446053-a69490f8-ecce-4f7f-99d0-55218c3bd9d9.png"> </div>
+</p>
 In other words, we used the injective flow to create a distribution
 of healthy, non-defective images and estimate the exact likelihood of new images based on
 which we decide if the new image is a part of the generated distribution (non-defective) or
