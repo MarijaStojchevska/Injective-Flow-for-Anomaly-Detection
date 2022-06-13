@@ -53,8 +53,7 @@ mappings becomes quite unstable in reconstructing outliers. Furthermore, we test
 discriminatory performance in anomaly detection of the model based on the MNIST dataset
 using seven different test sets, of which six were artificially created. Having concluded that
 the model has a remarkable ability to detect anomalies for handwritten digits, we proceeded
-to work on the same problem for the MVTec dataset.
-</div>
+to work on the same problem for the MVTec dataset. </div>
 
 <div align="justify">
 Given the dimensionality of the MVTec images, we used transfer learning to extract their
@@ -65,5 +64,4 @@ model. In addition to feature extraction, we applied background extraction, data
 and data standardization to the MVTec training and test examples. With each of
 these preprocessing steps, we contributed in a different way to improving the model’s performance.
 In the rest of the work, we covered the training and evaluation of the model on
-such preprocessed images.
-</div>
+such preprocessed images. </div>
