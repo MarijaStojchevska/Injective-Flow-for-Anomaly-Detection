@@ -84,11 +84,11 @@ these preprocessing steps, we contributed in a different way to improving the mo
 In the rest of the work, we covered the training and evaluation of the model on
 such preprocessed images. </div></p>
 
-
 <div align="justify">
 The architecture of the injective flows allows for efficient likelihood computation of a new
 sample with respect to two different densities learned in the two different output spaces of
-the model. Therefore, after training the model on nonanomalous examples, we evaluated
+the model: the output space of the bijective map, and the output space of the injective map. 
+Therefore, after training the model on nonanomalous examples, we evaluated
 the likelihoods—the probability that the instance is part of the learned distribution—for
 each test instance relative to the two learned densities. Our goal was to check if these two
 likelihoods are drastically different. Intuitively speaking, we were checking if something that
