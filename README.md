@@ -70,7 +70,7 @@ using seven different test sets, of which six were artificially created. Having 
 the model has a remarkable ability to detect anomalies for handwritten digits, we proceeded
 to work on the same problem for the MVTec dataset. </div>
 
-<p><div align="center"><img width="500" src="https://user-images.githubusercontent.com/18449614/173460172-20a1cf45-ed1d-4e42-bbfe-9934354ceec1.png"> </div><div align="center"><i>Example of out-of-distribution data reconstruction using an injective model
+<p><div align="center"><img width="567" src="https://user-images.githubusercontent.com/18449614/173460172-20a1cf45-ed1d-4e42-bbfe-9934354ceec1.png"> </div><div align="center"><i>Example of out-of-distribution data reconstruction using an injective model
 trained on the MNIST dataset.</i></div></p>
 
 <p><div align="justify">
