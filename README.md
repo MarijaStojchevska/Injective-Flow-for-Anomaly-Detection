@@ -106,8 +106,16 @@ and augmented input images. The upper values in each row represent the AUC
 of the performance of the injective flow, while the lower values represent the AUC of the
 performance of the bijective flow. The best value for each category is shown in bold.</i></div></p>
 
-<p><div align="center"><img width="567" src="https://user-images.githubusercontent.com/18449614/173462473-b921ec77-be0b-46c0-9b4a-79c63e4b285b.png"> </div><div align="center"><i>Table 2: </i></div></p>
+<p><div align="center"><img width="667" src="https://user-images.githubusercontent.com/18449614/173462473-b921ec77-be0b-46c0-9b4a-79c63e4b285b.png"> </div><div align="center"><i>Table 2: Evaluation results of the injective model when trained and tested on the
+DenseNet-121 extracted features per category. The results are shown with respect to the
+original, standardized, and two differently augmented datasets. The upper values in each
+row represent the AUC of the injective flow, while the lower values represent the AUC of
+the bijective flow. The best value for each category is shown in bold. </i></div></p>
   
 As a final thought, we can point out that our
 injective model outperforms the established baselines in detecting MVTec defective objects
 and textures for most of the categories.
+
+<p><div align="center"><img width="667" src="https://user-images.githubusercontent.com/18449614/173462633-77e934d4-d627-4f7d-bc78-611783179232.png" > </div><div align="center"><i>Table 3: Comparison of the best AUC values obtained for the injective model relative to
+those corresponding to the baseline models. The best results for each MVTec category
+are shown in bold. </i></div></p>
