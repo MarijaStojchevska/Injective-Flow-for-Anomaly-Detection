@@ -103,8 +103,7 @@ the injective mapping, in this way we further reduced the computational complexi
 model. In addition to feature extraction, we applied background extraction, data augmentation, 
 and data standardization to the MVTec training and test examples. With each of
 these preprocessing steps, we contributed in a different way to improving the model’s performance.
-In the rest of the work, we covered the training and evaluation of the model on
-such preprocessed images. </div></p>
+In the rest of the work, we covered the evaluation of the model on such preprocessed images. </div></p>
 
 <p><div align="center"><img width="500" src="https://user-images.githubusercontent.com/18449614/173462339-06aee483-12a3-4e18-8c23-753e71b08b9d.png"> </div><div align="center"><i>Table 1: Evaluation results of the injective model when trained and tested on the VGG16
 extracted features per category. The results are shown with respect to the original, standardized,
