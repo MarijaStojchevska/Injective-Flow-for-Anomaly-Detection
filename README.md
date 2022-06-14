@@ -45,7 +45,7 @@ anomaly detection. International Journal of Computer Vision, 129(4):1038–1059,
 2021.</i></div></p>
 
 
-<div align="justify">
+<p><div align="justify">
 The architecture of the injective flows allows for efficient likelihood computation of a new
 sample with respect to two different densities learned in the two different output spaces of
 the model: the output space of the bijective map, and the output space of the injective map. 
@@ -59,7 +59,7 @@ purpose of outlier detection, the difference in densities in both spaces is not 
 neglected. This indicates that, as we intuitively expected, the injective mapping contributes
 to a faster but not a better model evaluation. Hence, for problems involving the use of these
 models in learning low-dimensional data distribution, we can neglect injective mapping and
-rely solely on traditional normalizing flows. </div>
+rely solely on traditional normalizing flows. </div></p>
 
 <div align="justify">
 Given the complexity of our work, at the very beginning, we facilitated a thorough evaluation
