@@ -44,6 +44,23 @@ The mvtec anomaly detection dataset: a comprehensive real-world dataset for unsu
 anomaly detection. International Journal of Computer Vision, 129(4):1038–1059,
 2021.</i></div></p>
 
+
+<div align="justify">
+The architecture of the injective flows allows for efficient likelihood computation of a new
+sample with respect to two different densities learned in the two different output spaces of
+the model: the output space of the bijective map, and the output space of the injective map. 
+Therefore, after training the model on nonanomalous examples, we evaluated
+the likelihoods—the probability that the instance is part of the learned distribution—for
+each test instance relative to the two learned densities. Our goal was to check if these two
+likelihoods are drastically different. Intuitively speaking, we were checking if something that
+looks like an anomaly in one space looks nonanomalous in the other space, and vice versa.
+From the evaluation results summarized in an AUC-ROC curve, we observed that, for the
+purpose of outlier detection, the difference in densities in both spaces is not large and can be
+neglected. This indicates that, as we intuitively expected, the injective mapping contributes
+to a faster but not a better model evaluation. Hence, for problems involving the use of these
+models in learning low-dimensional data distribution, we can neglect injective mapping and
+rely solely on traditional normalizing flows. </div>
+
 <div align="justify">
 Given the complexity of our work, at the very beginning, we facilitated a thorough evaluation
 of the generative and discriminatory power of the model by using the MNIST dataset that is
@@ -83,22 +100,6 @@ and data standardization to the MVTec training and test examples. With each of
 these preprocessing steps, we contributed in a different way to improving the model’s performance.
 In the rest of the work, we covered the training and evaluation of the model on
 such preprocessed images. </div></p>
-
-<div align="justify">
-The architecture of the injective flows allows for efficient likelihood computation of a new
-sample with respect to two different densities learned in the two different output spaces of
-the model: the output space of the bijective map, and the output space of the injective map. 
-Therefore, after training the model on nonanomalous examples, we evaluated
-the likelihoods—the probability that the instance is part of the learned distribution—for
-each test instance relative to the two learned densities. Our goal was to check if these two
-likelihoods are drastically different. Intuitively speaking, we were checking if something that
-looks like an anomaly in one space looks nonanomalous in the other space, and vice versa.
-From the evaluation results summarized in an AUC-ROC curve, we observed that, for the
-purpose of outlier detection, the difference in densities in both spaces is not large and can be
-neglected. This indicates that, as we intuitively expected, the injective mapping contributes
-to a faster but not a better model evaluation. Hence, for problems involving the use of these
-models in learning low-dimensional data distribution, we can neglect injective mapping and
-rely solely on traditional normalizing flows. </div>
 
 <p><div align="center"><img width="500" src="https://user-images.githubusercontent.com/18449614/173462339-06aee483-12a3-4e18-8c23-753e71b08b9d.png"> </div><div align="center"><i>Table 1: Evaluation results of the injective model when trained and tested on the VGG16
 extracted features per category. The results are shown with respect to the original, standardized,
