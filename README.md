@@ -64,6 +64,7 @@ to a faster but not a better model evaluation. Hence, for problems involving the
 models in learning low-dimensional data distribution, we can neglect injective mapping and
 rely solely on traditional normalizing flows. </div></p>
 
+<h2>2. MNIST Experiments </h2>
 <div align="justify">
 Given the complexity of our work, at the very beginning, we facilitated a thorough evaluation
 of the generative and discriminatory power of the model by using the MNIST dataset that is
@@ -93,6 +94,7 @@ to work on the same problem for the MVTec dataset. </div>
 <p><div align="center"><img width="567" src="https://user-images.githubusercontent.com/18449614/173460172-20a1cf45-ed1d-4e42-bbfe-9934354ceec1.png"> </div><div align="center"><i>Figure 4: Example of out-of-distribution data reconstruction using an injective model
 trained on the MNIST dataset.</i></div></p>
 
+<h2>2. MVTec Results </h2>
 <p><div align="justify">
 Given the dimensionality of the MVTec images, we used VGG16 and DenseNet-121 transfer learning to extract their
 features and thus reduce their dimension, while still preserving important image information.
