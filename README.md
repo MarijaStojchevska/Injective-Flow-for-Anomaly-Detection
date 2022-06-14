@@ -97,7 +97,7 @@ trained on the MNIST dataset.</i></div></p>
 <h2>3. MVTec Results </h2>
 <p><div align="justify">
 Given the dimensionality of the MVTec images, we used VGG16 and DenseNet-121 transfer learning to extract their
-features and thus reduce their dimension, while still preserving important image information
+features and thus reduce their dimension, while still preserving important image information.
 The extracted features were then averaged across the channel dimension. Apart from
 the injective mapping, in this way we further reduced the computational complexity of the
 model. In addition to feature extraction, we applied background extraction, data augmentation, 
