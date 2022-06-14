@@ -26,6 +26,9 @@ Instructions for accessing the datasets:
 ```
 
 # Detection of Anomalous Images using Injective Flows
+
+
+<h2>1. Introduction</h2>
 <div align="justify">
 Traditional normalizing flows require large computational costs to learn transformations of
 an input distribution, mainly because they operate at exactly the same dimension as the
