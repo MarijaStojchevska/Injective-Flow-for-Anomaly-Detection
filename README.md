@@ -46,6 +46,7 @@ The mvtec anomaly detection dataset: a comprehensive real-world dataset for unsu
 anomaly detection. International Journal of Computer Vision, 129(4):1038–1059,
 2021.</i></div></p>
 
+
 <h2>2. Model Architecture</h2>
 
 <p><div align="center"><img width="567" src="https://github.com/MarijaStojchevska/Injective-Flow-for-Anomaly-Detection/assets/18449614/baa2d775-fd4c-4d13-bbb9-a5b7b55bf68a.png" (https://github.com/MarijaStojchevska/Injective-Flow-for-Anomaly-Detection/assets/18449614/baa2d775-fd4c-4d13-bbb9-a5b7b55bf68a.png)" > </div><div align="center"><i>Figure 2.1: Model architecture. The input size 32x32x1 represents the dimension of the MVTec features extracted through the DenseNet-
@@ -68,7 +69,9 @@ to a faster but not a better model evaluation. Hence, for problems involving the
 models in learning low-dimensional data distribution, we can neglect injective mapping and
 rely solely on traditional normalizing flows. </div></p>
 
+
 <h2>3. Model Evaluation</h2>
+
 <p><div align="center"><img width="567" src="https://github.com/MarijaStojchevska/Injective-Flow-for-Anomaly-Detection/assets/18449614/969eb040-b225-46e3-80ac-6bd84572c0c5.png" (https://github.com/MarijaStojchevska/Injective-Flow-for-Anomaly-Detection/assets/18449614/969eb040-b225-46e3-80ac-6bd84572c0c5.png)" > </div><div align="center"><i>Figure 2.1: Forward propagation of an input image during the evaluation phase.
 
 For computational benefits, we first extract the features from an input test image with a
@@ -87,6 +90,7 @@ then used to classify the input test example as anomalous or nonanomalous.
 
 
 <h2>3. MNIST Experiments </h2>
+
 <div align="justify">
 Given the complexity of our work, at the very beginning, we facilitated a thorough evaluation
 of the generative and discriminatory power of the model by using the MNIST dataset that is
