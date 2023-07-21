@@ -26,6 +26,9 @@ Instructions for accessing the datasets:
 ```
 
 # Detection of Anomalous Images using Injective Flows
+This README provides a rough overview of the reconstructive and generative power of the implemented injective model and illustrates how this model handles OOD over well-known low-dimensional sets.
+
+Experiments conducted over the MVTec database are not included in the description. Contact me for more information.
 
 <h2>1. Introduction</h2>
 <div align="justify">
@@ -33,7 +36,7 @@ Traditional normalizing flows require large computational costs to learn transfo
 an input distribution, mainly because they operate at exactly the same dimension as the
 input which is usually high dimensional. We utilized the Trumpet model idea (https://github.com/swing-research/trumpets.git) to implement
 an injective flow capable of mitigating the computational complexity in normalizing flows
-via an injective mapping. The main task to which we adapted this model is the detection of
+via injective mapping. The main task to which we adapted this model is the detection of
 defects in the manufacturing industry by working with images of various objects and textures
 from the MVTec dataset. In other words, we used the injective flow to create a distribution
 of healthy, non-defective images and estimate the exact likelihood of new images based on
@@ -126,7 +129,7 @@ model that generates the displayed digits.</i></div></p>
 Given the dimensionality of the MVTec images, we used VGG16 and DenseNet-121 transfer learning to extract their
 features and thus reduce their dimension, while still preserving important image information.
 The extracted features were then averaged across the channel dimension. Apart from
-the injective mapping, in this way we further reduced the computational complexity of the
+the injective mapping, in this way, we further reduced the computational complexity of the
 model. In addition to feature extraction, we applied background extraction, data augmentation, 
 and data standardization to the MVTec training and test examples. With each of
 these preprocessing steps, we contributed in a different way to improving the model’s performance.
