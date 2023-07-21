@@ -48,11 +48,8 @@ anomaly detection. International Journal of Computer Vision, 129(4):1038–1059,
 2021.</i></div></p>
 
 <h2>2. Model Architecture</h2>
-</div>![generator_1](https://github.com/MarijaStojchevska/Injective-Flow-for-Anomaly-Detection/assets/18449614/9ba66ee2-75af-4240-8dec-565bc5d6d9f7)
 
-
-<p><div align="center"><img width="567" src="https://user-images.githubusercontent.com/18449614/173446053-a69490f8-ecce-4f7f-99d0-55218c3bd9d9.png" (https://user-images.githubusercontent.com/18449614/173446053-a69490f8-ecce-4f7f-99d0-55218c3bd9d9.png)" > </div><div align="center"><i>Figure 1.1: MVTec dataset - Paul Bergmann, Kilian Batzner, Michael Fauser, David Sattlegger, and Carsten Steger.
-
+<p><div align="center"><img width="567" src="https://github.com/MarijaStojchevska/Injective-Flow-for-Anomaly-Detection/assets/18449614/9ba66ee2-75af-4240-8dec-565bc5d6d9f7.png" (https://github.com/MarijaStojchevska/Injective-Flow-for-Anomaly-Detection/assets/18449614/9ba66ee2-75af-4240-8dec-565bc5d6d9f7.png)" > </div><div align="center"><i>Figure 2.1: Steps for evaluating a new input image from the MVTec dataset and the corresponding input dimensions.
 
 <p><div align="justify">
 The architecture of the injective flows allows for efficient likelihood computation of a new
