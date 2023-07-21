@@ -50,7 +50,7 @@ anomaly detection. International Journal of Computer Vision, 129(4):1038–1059,
 <h2>2. Model Architecture</h2>
 
 <p><div align="center"><img width="567" src="https://github.com/MarijaStojchevska/Injective-Flow-for-Anomaly-Detection/assets/18449614/baa2d775-fd4c-4d13-bbb9-a5b7b55bf68a.png" (https://github.com/MarijaStojchevska/Injective-Flow-for-Anomaly-Detection/assets/18449614/baa2d775-fd4c-4d13-bbb9-a5b7b55bf68a.png)" > </div><div align="center"><i>Figure 2.1: Model architecture. The input size 32x32x1 represents the dimension of the MVTec features extracted through the DenseNet-
-121 feature extractor. 
+121 feature extractor.<p>
 
 
 <p><div align="justify">
@@ -65,14 +65,12 @@ looks like an anomaly in one space looks nonanomalous in the other space, and vi
 From the evaluation results summarized in an AUC-ROC curve, we observed that, for the
 purpose of outlier detection, the difference in densities in both spaces is not large and can be
 neglected. This indicates that, as we intuitively expected, the injective mapping contributes
-to a faster but not a better model evaluation. Hence, for problems involving the use of these
-models in learning low-dimensional data distribution, we can neglect injective mapping and
-rely solely on traditional normalizing flows. </div></p>
+to a faster but not a better model evaluation. </div></p>
 
 
 <h2>3. Model Evaluation</h2>
 
-<p><div align="center"><img width="567" src="https://github.com/MarijaStojchevska/Injective-Flow-for-Anomaly-Detection/assets/18449614/969eb040-b225-46e3-80ac-6bd84572c0c5.png" (https://github.com/MarijaStojchevska/Injective-Flow-for-Anomaly-Detection/assets/18449614/969eb040-b225-46e3-80ac-6bd84572c0c5.png)" > </div><div align="center"><i>Figure 2.1: Forward propagation of an input image during the evaluation phase.
+<p><div align="center"><img width="567" src="https://github.com/MarijaStojchevska/Injective-Flow-for-Anomaly-Detection/assets/18449614/969eb040-b225-46e3-80ac-6bd84572c0c5.png" (https://github.com/MarijaStojchevska/Injective-Flow-for-Anomaly-Detection/assets/18449614/969eb040-b225-46e3-80ac-6bd84572c0c5.png)" > </div><div align="center"><i>Figure 3.1: Forward propagation of an input image during the evaluation phase.<p>
 
 For computational benefits, we first extract the features from an input test image with a
 feature extractor of our choice and then feed them to the injective part of the model. The
@@ -89,7 +87,7 @@ the bijective and injective transformations. The calculated likelihoods are
 then used to classify the input test example as anomalous or nonanomalous.
 
 
-<h2>3. MNIST Experiments </h2>
+<h2>4. MNIST Experiments </h2>
 
 <div align="justify">
 Given the complexity of our work, at the very beginning, we facilitated a thorough evaluation
@@ -98,18 +96,17 @@ suitable for deep learning. By experimenting on the MNIST dataset, we concluded 
 model is capable of reconstructing high-quality images and generating new images from the
 learned distribution. 
 
-<p><div align="center"><img width="767" src="https://user-images.githubusercontent.com/18449614/173459470-8aee42ef-0d01-474d-ba2a-f573ffef3900.png"> </div><div align="center"><i>Figure 2.1: Example of the reconstruction of 36 input MNIST images using injective models
+<p><div align="center"><img width="767" src="https://user-images.githubusercontent.com/18449614/173459470-8aee42ef-0d01-474d-ba2a-f573ffef3900.png"> </div><div align="center"><i>Figure 4.1: Example of the reconstruction of 36 input MNIST images using injective models
 trained on 30,000 MNIST training examples. For each model, the different depth of the
 injective map, i.e. the number of squeeze-bijective revnet-injective revnet blocks, is written
 above each column. The first row shows the reconstructions of the whole injective-bijective
 transformation, while the second row shows their corresponding reconstructions obtained
 by applying only the inverse bijective transformation.</i></div></p>
 
-<p><div align="center"><img width="500" src="https://user-images.githubusercontent.com/18449614/173459774-567f1050-0977-452d-92ee-28b2e1af9f12.png"> </div><div align="center"><i>Figure 2.2: Example of newly generated digits using an injective model trained on 30,000
+<p><div align="center"><img width="500" src="https://user-images.githubusercontent.com/18449614/173459774-567f1050-0977-452d-92ee-28b2e1af9f12.png"> </div><div align="center"><i>Figure 4.2: Example of newly generated digits using an injective model trained on 30,000
 MNIST training images. Above each image we show the depth of the injective map of the
 model that generates the displayed digits.</i></div></p>
-  
-  
+
 In contrast, we also noticed that the injective flow with deeper injective
 mappings becomes quite unstable in reconstructing outliers. Furthermore, we tested the
 discriminatory performance in anomaly detection of the model based on the MNIST dataset
@@ -117,10 +114,18 @@ using seven different test sets, of which six were artificially created. Having 
 the model has a remarkable ability to detect anomalies for handwritten digits, we proceeded
 to work on the same problem for the MVTec dataset. </div>
 
-<p><div align="center"><img width="567" src="https://user-images.githubusercontent.com/18449614/173460172-20a1cf45-ed1d-4e42-bbfe-9934354ceec1.png"> </div><div align="center"><i>Figure 2.3: Example of out-of-distribution data reconstruction using an injective model
+<p><div align="center"><img width="567" src="https://user-images.githubusercontent.com/18449614/173460172-20a1cf45-ed1d-4e42-bbfe-9934354ceec1.png"> </div><div align="center"><i>Figure 4.3: Example of out-of-distribution data reconstruction using an injective model
 trained on the MNIST dataset.</i></div></p>
 
-<h2>3. MVTec Results </h2>
+In addition to reconstructing examples from the learned distribution, we also test the reconstructive
+power of the injective model on out-of-distribution data. For this purpose, we
+work with examples from the Fashion MNIST dataset whose reconstructions are carried
+out by an injective flow with a shallow injective map of depth = 1. From the
+results, we conclude that our injective model visually changes the clothes in the images to
+keep the reconstruction of the data close to the learned manifold of the training examples.
+
+
+<h2>5. MVTec Results </h2>
 <p><div align="justify">
 Given the dimensionality of the MVTec images, we used VGG16 and DenseNet-121 transfer learning to extract their
 features and thus reduce their dimension, while still preserving important image information.
@@ -131,24 +136,24 @@ and data standardization to the MVTec training and test examples. With each of
 these preprocessing steps, we contributed in a different way to improving the model’s performance.
 In the rest of the work, we covered the evaluation of the model on such preprocessed images. </div></p>
 
-<p><div align="center"><img width="500" src="https://user-images.githubusercontent.com/18449614/173462339-06aee483-12a3-4e18-8c23-753e71b08b9d.png"> </div><div align="center"><i>Table 3.1: Evaluation results of the injective model when trained and tested on the VGG16
+<p><div align="center"><img width="500" src="https://user-images.githubusercontent.com/18449614/173462339-06aee483-12a3-4e18-8c23-753e71b08b9d.png"> </div><div align="center"><i>Table 5.1: Evaluation results of the injective model when trained and tested on the VGG16
 extracted features per category. The results are shown with respect to the original, standardized,
 and augmented input images. The upper values in each row represent the AUC
 of the performance of the injective flow, while the lower values represent the AUC of the
 performance of the bijective flow. The best value for each category is shown in bold.</i></div></p>
 
-<p><div align="center"><img width="667" src="https://user-images.githubusercontent.com/18449614/173462473-b921ec77-be0b-46c0-9b4a-79c63e4b285b.png"> </div><div align="center"><i>Table 3.2: Evaluation results of the injective model when trained and tested on the
+<p><div align="center"><img width="667" src="https://user-images.githubusercontent.com/18449614/173462473-b921ec77-be0b-46c0-9b4a-79c63e4b285b.png"> </div><div align="center"><i>Table 5.2: Evaluation results of the injective model when trained and tested on the
 DenseNet-121 extracted features per category. The results are shown with respect to the
 original, standardized, and two differently augmented datasets. The upper values in each
 row represent the AUC of the injective flow, while the lower values represent the AUC of
 the bijective flow. The best value for each category is shown in bold. </i></div></p>
 
-<h2>4. Conclusion </h2>
+<h2>6. Conclusion </h2>
 
 As a final thought, we can point out that our
 injective model outperforms the established baselines in detecting MVTec defective objects
 and textures for most of the categories.
 
-<p><div align="center"><img width="500" src="https://user-images.githubusercontent.com/18449614/173462817-fd9dbf24-977d-461b-94de-cb8a4f0c351a.png" > </div><div align="center"><i>Table 4.1: Comparison of the best AUC values obtained for the injective model relative to
+<p><div align="center"><img width="500" src="https://user-images.githubusercontent.com/18449614/173462817-fd9dbf24-977d-461b-94de-cb8a4f0c351a.png" > </div><div align="center"><i>Table 5.1: Comparison of the best AUC values obtained for the injective model relative to
 those corresponding to the baseline models. The best results for each MVTec category
 are shown in bold. </i></div></p>
