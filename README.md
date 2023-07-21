@@ -152,6 +152,6 @@ the bijective flow. The best value for each category is shown in bold. </i></div
 As a final thought, we can point out that our injective model outperforms the established baselines in detecting MVTec defective objects
 and textures for most of the categories.
 
-<p><div align="center"><img width="500" src="https://user-images.githubusercontent.com/18449614/173462817-fd9dbf24-977d-461b-94de-cb8a4f0c351a.png" > </div><div align="center"><i>Table 5.1: Comparison of the best AUC values obtained for the injective model relative to
+<p><div align="center"><img width="500" src="https://user-images.githubusercontent.com/18449614/173462817-fd9dbf24-977d-461b-94de-cb8a4f0c351a.png" > </div><div align="center"><i>Table 6.1: Comparison of the best AUC values obtained for the injective model relative to
 those corresponding to the baseline models. The best results for each MVTec category
 are shown in bold. </i></div></p>
