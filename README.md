@@ -48,10 +48,8 @@ anomaly detection. International Journal of Computer Vision, 129(4):1038–1059,
 
 
 <h2>2. Model Architecture</h2>
-
 <p><div align="center"><img width="567" src="https://github.com/MarijaStojchevska/Injective-Flow-for-Anomaly-Detection/assets/18449614/baa2d775-fd4c-4d13-bbb9-a5b7b55bf68a.png" (https://github.com/MarijaStojchevska/Injective-Flow-for-Anomaly-Detection/assets/18449614/baa2d775-fd4c-4d13-bbb9-a5b7b55bf68a.png)" > </div><div align="center"><i>Figure 2.1: Model architecture. The input size 32x32x1 represents the dimension of the MVTec features extracted through the DenseNet-
-121 feature extractor.<p>
-
+121 feature extractor.</i></div></p>
 
 <p><div align="justify">
 The architecture of the injective flows allows for efficient likelihood computation of a new
@@ -70,7 +68,7 @@ to a faster but not a better model evaluation. </div></p>
 
 <h2>3. Model Evaluation</h2>
 
-<p><div align="center"><img width="567" src="https://github.com/MarijaStojchevska/Injective-Flow-for-Anomaly-Detection/assets/18449614/969eb040-b225-46e3-80ac-6bd84572c0c5.png" (https://github.com/MarijaStojchevska/Injective-Flow-for-Anomaly-Detection/assets/18449614/969eb040-b225-46e3-80ac-6bd84572c0c5.png)" > </div><div align="center"><i>Figure 3.1: Forward propagation of an input image during the evaluation phase.<p>
+<p><div align="center"><img width="567" src="https://github.com/MarijaStojchevska/Injective-Flow-for-Anomaly-Detection/assets/18449614/969eb040-b225-46e3-80ac-6bd84572c0c5.png" (https://github.com/MarijaStojchevska/Injective-Flow-for-Anomaly-Detection/assets/18449614/969eb040-b225-46e3-80ac-6bd84572c0c5.png)" > </div><div align="center"><i>Figure 3.1: Forward propagation of an input image during the evaluation phase.</i></div></p>
 
 For computational benefits, we first extract the features from an input test image with a
 feature extractor of our choice and then feed them to the injective part of the model. The
@@ -103,12 +101,14 @@ above each column. The first row shows the reconstructions of the whole injectiv
 transformation, while the second row shows their corresponding reconstructions obtained
 by applying only the inverse bijective transformation.</i></div></p>
 
+We also tested the ability of our model to generate new images never seen in the training dataset. 
+
 <p><div align="center"><img width="500" src="https://user-images.githubusercontent.com/18449614/173459774-567f1050-0977-452d-92ee-28b2e1af9f12.png"> </div><div align="center"><i>Figure 4.2: Example of newly generated digits using an injective model trained on 30,000
 MNIST training images. Above each image we show the depth of the injective map of the
 model that generates the displayed digits.</i></div></p>
 
 In contrast, we also noticed that the injective flow with deeper injective
-mappings becomes quite unstable in reconstructing outliers. Furthermore, we tested the
+mappings becomes quite unstable in reconstructing outliers. We tested the
 discriminatory performance in anomaly detection of the model based on the MNIST dataset
 using seven different test sets, of which six were artificially created. Having concluded that
 the model has a remarkable ability to detect anomalies for handwritten digits, we proceeded
