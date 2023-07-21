@@ -103,12 +103,12 @@ by applying only the inverse bijective transformation.</i></div></p>
 
 </div> In contrast, we noticed that the injective flow with deeper injective mappings becomes quite unstable in reconstructing outliers. We tested the discriminatory performance in anomaly detection of the model based on the MNIST dataset using seven different test sets, of which six were artificially created. Having concluded that the model has a remarkable ability to detect anomalies for handwritten digits, we proceeded to work on the same problem for the MVTec dataset. </div>
 
-In addition to reconstructing examples from the learned distribution, we also test the reconstructive
+</div> In addition to reconstructing examples from the learned distribution, we also test the reconstructive
 power of the injective model on out-of-distribution data. For this purpose, we
 work with examples from the Fashion MNIST dataset whose reconstructions are carried
 out by an injective flow with a shallow injective map of depth = 1. From the
 results, we conclude that our injective model visually changes the clothes in the images to
-keep the reconstruction of the data close to the learned manifold of the training examples.
+keep the reconstruction of the data close to the learned manifold of the training examples.</div>
 
 <p><div align="center"><img width="567" src="https://user-images.githubusercontent.com/18449614/173460172-20a1cf45-ed1d-4e42-bbfe-9934354ceec1.png"> </div><div align="center"><i>Figure 4.2: Example of out-of-distribution data reconstruction using an injective model
 trained on the MNIST dataset.</i></div></p>
@@ -119,7 +119,6 @@ trained on the MNIST dataset.</i></div></p>
 <p><div align="center"><img width="500" src="https://user-images.githubusercontent.com/18449614/173459774-567f1050-0977-452d-92ee-28b2e1af9f12.png"> </div><div align="center"><i>Figure 4.3: Example of newly generated digits using an injective model trained on 30,000
 MNIST training images. Above each image, we show the depth of the injective map of the
 model that generates the displayed digits.</i></div></p>
-
 
 
 <h2>5. MVTec Results </h2>
