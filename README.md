@@ -90,9 +90,9 @@ then used to classify the input test example as anomalous or nonanomalous.
 <div align="justify">
 Given the complexity of our work, at the very beginning, we facilitated a thorough evaluation
 of the generative and discriminatory power of the model by using the MNIST dataset that is
-suitable for deep learning. By experimenting on the MNIST dataset, we concluded that the
+suitable for deep learning. By experimenting with the MNIST dataset, we concluded that the
 model is capable of reconstructing high-quality images and generating new images from the
-learned distribution. 
+learned distribution. </div>
 
 <p><div align="center"><img width="767" src="https://user-images.githubusercontent.com/18449614/173459470-8aee42ef-0d01-474d-ba2a-f573ffef3900.png"> </div><div align="center"><i>Figure 4.1: Example of the reconstruction of 36 input MNIST images using injective models
 trained on 30,000 MNIST training examples. For each model, the different depth of the
@@ -101,21 +101,7 @@ above each column. The first row shows the reconstructions of the whole injectiv
 transformation, while the second row shows their corresponding reconstructions obtained
 by applying only the inverse bijective transformation.</i></div></p>
 
-We also tested the ability of our model to generate new images never seen in the training dataset. 
-
-<p><div align="center"><img width="500" src="https://user-images.githubusercontent.com/18449614/173459774-567f1050-0977-452d-92ee-28b2e1af9f12.png"> </div><div align="center"><i>Figure 4.2: Example of newly generated digits using an injective model trained on 30,000
-MNIST training images. Above each image we show the depth of the injective map of the
-model that generates the displayed digits.</i></div></p>
-
-In contrast, we also noticed that the injective flow with deeper injective
-mappings becomes quite unstable in reconstructing outliers. We tested the
-discriminatory performance in anomaly detection of the model based on the MNIST dataset
-using seven different test sets, of which six were artificially created. Having concluded that
-the model has a remarkable ability to detect anomalies for handwritten digits, we proceeded
-to work on the same problem for the MVTec dataset. </div>
-
-<p><div align="center"><img width="567" src="https://user-images.githubusercontent.com/18449614/173460172-20a1cf45-ed1d-4e42-bbfe-9934354ceec1.png"> </div><div align="center"><i>Figure 4.3: Example of out-of-distribution data reconstruction using an injective model
-trained on the MNIST dataset.</i></div></p>
+</div> In contrast, we noticed that the injective flow with deeper injective mappings becomes quite unstable in reconstructing outliers. We tested the discriminatory performance in anomaly detection of the model based on the MNIST dataset using seven different test sets, of which six were artificially created. Having concluded that the model has a remarkable ability to detect anomalies for handwritten digits, we proceeded to work on the same problem for the MVTec dataset. </div>
 
 In addition to reconstructing examples from the learned distribution, we also test the reconstructive
 power of the injective model on out-of-distribution data. For this purpose, we
@@ -123,6 +109,17 @@ work with examples from the Fashion MNIST dataset whose reconstructions are carr
 out by an injective flow with a shallow injective map of depth = 1. From the
 results, we conclude that our injective model visually changes the clothes in the images to
 keep the reconstruction of the data close to the learned manifold of the training examples.
+
+<p><div align="center"><img width="567" src="https://user-images.githubusercontent.com/18449614/173460172-20a1cf45-ed1d-4e42-bbfe-9934354ceec1.png"> </div><div align="center"><i>Figure 4.2: Example of out-of-distribution data reconstruction using an injective model
+trained on the MNIST dataset.</i></div></p>
+
+
+</div>We also tested the ability of our model to generate new images never seen in the training dataset. </div>
+
+<p><div align="center"><img width="500" src="https://user-images.githubusercontent.com/18449614/173459774-567f1050-0977-452d-92ee-28b2e1af9f12.png"> </div><div align="center"><i>Figure 4.3: Example of newly generated digits using an injective model trained on 30,000
+MNIST training images. Above each image, we show the depth of the injective map of the
+model that generates the displayed digits.</i></div></p>
+
 
 
 <h2>5. MVTec Results </h2>
@@ -150,8 +147,7 @@ the bijective flow. The best value for each category is shown in bold. </i></div
 
 <h2>6. Conclusion </h2>
 
-As a final thought, we can point out that our
-injective model outperforms the established baselines in detecting MVTec defective objects
+As a final thought, we can point out that our injective model outperforms the established baselines in detecting MVTec defective objects
 and textures for most of the categories.
 
 <p><div align="center"><img width="500" src="https://user-images.githubusercontent.com/18449614/173462817-fd9dbf24-977d-461b-94de-cb8a4f0c351a.png" > </div><div align="center"><i>Table 5.1: Comparison of the best AUC values obtained for the injective model relative to
