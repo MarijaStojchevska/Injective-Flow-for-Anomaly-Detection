@@ -117,7 +117,7 @@ keep the reconstruction of the data close to the learned manifold of the trainin
 trained on the MNIST dataset.</i></div></p>
 
 
-</div>We also tested the ability of our model to generate new images never seen in the training dataset. </div>
+</div>Our model proved to be very powerful when generating new images never seen in the training dataset. </div>
 
 <p><div align="center"><img width="500" src="https://user-images.githubusercontent.com/18449614/173459774-567f1050-0977-452d-92ee-28b2e1af9f12.png"> </div><div align="center"><i>Figure 4.3: Example of newly generated digits using an injective model trained on 30,000
 MNIST training images. Above each image, we show the depth of the injective map of the
