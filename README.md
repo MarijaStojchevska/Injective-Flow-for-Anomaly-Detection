@@ -47,9 +47,9 @@ anomaly detection. International Journal of Computer Vision, 129(4):1038–1059,
 2021.</i></div></p>
 
 <h2>2. Model Architecture</h2>
-![model](https://github.com/MarijaStojchevska/Injective-Flow-for-Anomaly-Detection/assets/18449614/baa2d775-fd4c-4d13-bbb9-a5b7b55bf68a)
+
 <p><div align="center"><img width="567" src="https://github.com/MarijaStojchevska/Injective-Flow-for-Anomaly-Detection/assets/18449614/baa2d775-fd4c-4d13-bbb9-a5b7b55bf68a.png" (https://github.com/MarijaStojchevska/Injective-Flow-for-Anomaly-Detection/assets/18449614/baa2d775-fd4c-4d13-bbb9-a5b7b55bf68a.png)" > </div><div align="center"><i>Figure 2.1: Model architecture. The input size 32x32x1 represents the dimension of the MVTec features extracted through the DenseNet-
-121 feature extractor. Changes in the size are given after each successive layer of the model.
+121 feature extractor. 
 
 
 <p><div align="justify">
@@ -68,7 +68,25 @@ to a faster but not a better model evaluation. Hence, for problems involving the
 models in learning low-dimensional data distribution, we can neglect injective mapping and
 rely solely on traditional normalizing flows. </div></p>
 
-<h2>2. MNIST Experiments </h2>
+<h2>3. Model Evaluation</h2>
+<p><div align="center"><img width="567" src="https://github.com/MarijaStojchevska/Injective-Flow-for-Anomaly-Detection/assets/18449614/969eb040-b225-46e3-80ac-6bd84572c0c5.png" (https://github.com/MarijaStojchevska/Injective-Flow-for-Anomaly-Detection/assets/18449614/969eb040-b225-46e3-80ac-6bd84572c0c5.png)" > </div><div align="center"><i>Figure 2.1: Forward propagation of an input image during the evaluation phase.
+
+For computational benefits, we first extract the features from an input test image with a
+feature extractor of our choice and then feed them to the injective part of the model. The
+extracted characteristics define the high-dimensional input space R^D. The transformations
+of the injective part contribute to the reduction of the input dimension, thus producing
+lower dimensional characteristics in R^d space. These characteristics are then propagated
+through the bijective part of the model, which, unlike the injective part, preserves their input
+dimension and maps them into a latent space R^d. By imposing a Gaussian distribution in
+the latent space, we make the input features normally distributed so that we get a closed-form
+solution for their probability. In this way, we can easily calculate the probability of a
+new test sample in relation to two different densities. One is estimated with respect to the
+bijective transformations, and the other is estimated with respect to both
+the bijective and injective transformations. The calculated likelihoods are
+then used to classify the input test example as anomalous or nonanomalous.
+
+
+<h2>3. MNIST Experiments </h2>
 <div align="justify">
 Given the complexity of our work, at the very beginning, we facilitated a thorough evaluation
 of the generative and discriminatory power of the model by using the MNIST dataset that is
