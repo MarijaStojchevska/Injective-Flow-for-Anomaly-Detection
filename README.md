@@ -27,7 +27,6 @@ Instructions for accessing the datasets:
 
 # Detection of Anomalous Images using Injective Flows
 
-
 <h2>1. Introduction</h2>
 <div align="justify">
 Traditional normalizing flows require large computational costs to learn transformations of
@@ -48,8 +47,10 @@ anomaly detection. International Journal of Computer Vision, 129(4):1038–1059,
 2021.</i></div></p>
 
 <h2>2. Model Architecture</h2>
+![model](https://github.com/MarijaStojchevska/Injective-Flow-for-Anomaly-Detection/assets/18449614/baa2d775-fd4c-4d13-bbb9-a5b7b55bf68a)
+<p><div align="center"><img width="567" src="https://github.com/MarijaStojchevska/Injective-Flow-for-Anomaly-Detection/assets/18449614/baa2d775-fd4c-4d13-bbb9-a5b7b55bf68a.png" (https://github.com/MarijaStojchevska/Injective-Flow-for-Anomaly-Detection/assets/18449614/baa2d775-fd4c-4d13-bbb9-a5b7b55bf68a.png)" > </div><div align="center"><i>Figure 2.1: Model architecture. The input size 32x32x1 represents the dimension of the MVTec features extracted through the DenseNet-
+121 feature extractor. Changes in the size are given after each successive layer of the model.
 
-<p><div align="center"><img width="567" src="https://github.com/MarijaStojchevska/Injective-Flow-for-Anomaly-Detection/assets/18449614/9ba66ee2-75af-4240-8dec-565bc5d6d9f7.png" (https://github.com/MarijaStojchevska/Injective-Flow-for-Anomaly-Detection/assets/18449614/9ba66ee2-75af-4240-8dec-565bc5d6d9f7.png)" > </div><div align="center"><i>Figure 2.1: Steps for evaluating a new input image from the MVTec dataset and the corresponding input dimensions.
 
 <p><div align="justify">
 The architecture of the injective flows allows for efficient likelihood computation of a new
