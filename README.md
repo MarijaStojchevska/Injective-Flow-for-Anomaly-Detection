@@ -26,7 +26,7 @@ Instructions for accessing the datasets:
 ```
 
 # Detection of Anomalous Images using Injective Flows
-This README provides a rough overview of the reconstructive and generative power of the implemented injective model and illustrates how this model handles OOD over well-known low-dimensional sets.
+This README provides a rough overview of the reconstructive and generative power of the implemented injective model and illustrates how this model handles OOD over well-known low-dimensional image datasets.
 
 Experiments conducted over the MVTec dataset are not included in the description. Contact me for more information.
 
